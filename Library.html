@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+
+  <title>Idarah Wali ul Aser Books Collection</title>
+  <link rel="stylesheet" href="navigation.css">
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="books.css">
+</head>
+
+<body>
+    <!--navigation -->
+  <div class="navigation">
+    <div class="nav-container">
+      <div class="brand">
+        <a href="#!"><img src="idarah.png" alt="Idarah" width="60px"></a>
+      </div>
+      <nav>
+        <div class="nav-mobile"><a id="navbar-toggle" href="#!"><span></span></a></div>
+        <ul class="nav-list">
+          <li>
+            <a href="https://idarahwaliulasr.netlify.app/">مرکز</a>
+          </li>
+          <li>
+            <a href="https://idarahwaliulasr.netlify.app/#about">
+              متعلق
+            </a>
+          </li>
+          <li>
+            <a href="#!">درس</a>
+            <ul class="navbar-dropdown">
+              <li>
+                <a href="7m-cource.html">
+                  سال درس
+                  ۷ </a>
+              </li>
+              <li>
+                <a href="friday-cource.html">جمعہ روز درس</a>
+              </li>
+              <li>
+                <a href="more-cource.html">مزید</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://idarahwaliulasr.netlify.app/#portfolio">نمونہ کار</a>
+          </li>
+
+          <li>
+            <a href="https://idarahwaliulasr.netlify.app/#contact">رابطہ</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <!-- navigation-->
+  <div class="hero">
+    <h1>Idarah Waliul Aser Library</h1>
+    <h2>Recommend Book</h2>
+    <div class="popular" id="popular">
+      
+    </div>
+  </div>
+  <div class="searchDiv">
+    <input type="search" name="search" id="search" placeholder="Search Book"> <button id="searchButton">Find</button>
+    
+    <p id="search-text-output"></p>
+  </div>
+  <h2 class="heading">
+    New Books
+  </h2>
+  <div class="wrapper">
+    
+    <div class="image" id="image">
+      <div class="book">
+        <img src="images/book-001.jpg" alt="images/book-001.jpg" draggable="false">
+      </div>
+      <div class="text" id="text">
+        <h3>Fikr e Mutahar</h3>
+        <p>Dr Mahdi Hamzus Salman</p>
+      </div>
+    </div>
+    
+    <div class="image" id="image">
+      <div class="book">
+        <img src="images/book-002.jpg" alt="images/book-002.jpg" draggable="false">
+      </div>
+      <div class="text" id="text">
+        <h3>Qabristan e Baqie</h3>
+        <p>Hajj Wa Ziyarat Research Center</p>
+      </div>
+    </div>
+    
+    
+     <div class="image" id="image">
+      <div class="book">
+        <img src="images/book-003.jpg" alt="images/book-003.jpg" draggable="false">
+      </div>
+      <div class="text" id="text">
+        <h3>Anwar Ghadir</h3>
+        <p>Sitad e Ghadir Qom</p>
+      </div>
+    </div>
+     
+     <div class="image" id="image">
+      <div class="book">
+        <img src="images/book-004.jpg" alt="images/book-004.jpg" draggable="false">
+      </div>
+      <div class="text" id="text">
+        <h3>Farhang Lugat e Quran</h3>
+        <p>Prop. Muharin Abbas Shushtari</p>
+      </div>
+    </div>
+    
+     
+     <div class="image" id="image">
+      <div class="book">
+        <img src="images/book-005.jpg" alt="images/book-005.jpg" draggable="false">
+      </div>
+      <div class="text" id="text">
+        <h3>Status of Women</h3>
+        <p>Ayatullah Imam Khamnai</p>
+      </div>
+    </div>
+     
+     <div class="image" id="image">
+      <div class="book">
+        <img src="images/book-006.jpg" alt="images/book-006.jpg" draggable="false">
+      </div>
+      <div class="text" id="text">
+        <h3>A 250 Years Old Person</h3>
+        <p>Ayatullah Imam Khamnai</p>
+      </div>
+    </div>
+     
+     <div class="image" id="image">
+      <div class="book">
+        <img src="images/book-007.jpg" alt="images/book-007.jpg" draggable="false">
+      </div>
+      <div class="text" id="text">
+        <h3>Dini Taleem</h3>
+        <p>Sayued Mahmud TabaTabai</p>
+      </div>
+    </div>
+     
+     <div class="image" id="image">
+      <div class="book">
+        <img src="images/book-008.jpg" alt="images/book-008.jpg" draggable="false">
+      </div>
+      <div class="text" id="text">
+        <h3>Ahkam Namaz e Jumma</h3>
+        <p>Daftar e Hafdahum</p>
+      </div>
+    </div>
+     
+     <div class="image" id="image">
+      <div class="book">
+        <img src="images/book-009.jpg" alt="images/book-009.jpg" draggable="false">
+      </div>
+      <div class="text" id="text">
+        <h3>An Account of Mina Tragedy</h3>
+        <p>Wilayat Publications</p>
+      </div>
+    </div>
+     
+     <div class="image" id="image">
+      <div class="book">
+        <img src="images/book-010.jpg" alt="images/book-010.jpg" draggable="false">
+      </div>
+      <div class="text" id="text">
+        <h3>Israr Namaz Ki Tajali</h3>
+        <p>Austad Mohsin Karaiti</p>
+      </div>
+    </div>
+     
+     <div class="image" id="image">
+      <div class="book">
+        <img src="images/book-011.jpg" alt="images/book-011.jpg" draggable="false">
+      </div>
+      <div class="text" id="text">
+        <h3>Azadi</h3>
+        <p>Ayatullah Imam Khamnai</p>
+      </div>
+    </div>
+    
+     <div class="image" id="image">
+      <div class="book">
+        <img src="images/book-012.jpg" alt="images/book-012.jpg" draggable="false">
+      </div>
+      <div class="text" id="text">
+        <h3>Hadis e Ghadir</h3>
+        <p>Mohd Taqi Rehbar</p>
+      </div>
+    </div>
+    
+     <div class="image" id="image">
+      <div class="book">
+        <img src="images/book-013.jpg" alt="images/book-013.jpg" draggable="false">
+      </div>
+      <div class="text" id="text">
+        <h3>Quran Aur Mustashqeen</h3>
+        <p>Dr. Mohd Hassan Zamani</p>
+      </div>
+    </div>
+     
+     <div class="image" id="image">
+      <div class="book">
+        <img src="images/book-014.jpg" alt="images/book-014.jpg" draggable="false">
+      </div>
+      <div class="text" id="text">
+        <h3> Imam Hussain (R.A) Ke Qatil Ka Anjam</h3>
+        <p>Khusro Qasim</p>
+      </div>
+    </div>
+     
+     <div class="image" id="image">
+      <div class="book">
+        <img src="images/book-015.jpg" alt="images/book-015.jpg" draggable="false">
+      </div>
+      <div class="text" id="text">
+        <h3>Mafati Al Hayah</h3>
+        <p>Jawad Aamili</p>
+      </div>
+    </div>
+     
+     <div class="image" id="image">
+      <div class="book">
+        <img src="images/book-016.jpg" alt="images/book-016.jpg" draggable="false">
+      </div>
+      <div class="text" id="text">
+        <h3>Munara Hidayat</h3>
+        <p>Manzar Hakim Wadi</p>
+      </div>
+    </div>
+     
+     <div class="image" id="image">
+      <div class="book">
+        <img src="images/book-017.jpg" alt="images/book-017.jpg" draggable="false">
+      </div>
+      <div class="text" id="text">
+        <h3>Mutla Anwar</h3>
+        <p>Syed Mehraj Rizei</p>
+      </div>
+    </div>
+     
+     <div class="image" id="image">
+      <div class="book">
+        <img src="images/book-018.jpg" alt="images/book-018.jpg" draggable="false">
+      </div>
+      <div class="text" id="text">
+        <h3>Nahjul Khitaba</h3>
+        <p>Ali bin Hussain Khurasani</p>
+      </div>
+    </div>
+     
+     <div class="image" id="image">
+      <div class="book">
+        <img src="images/book-019.jpg" alt="images/book-019.jpg" draggable="false">
+      </div>
+      <div class="text" id="text">
+        <h3>Islam wa Iran Ke Taqabli Khidmat</h3>
+        <p>Shaheed Murtazai Muthari</p>
+      </div>
+    </div>
+     
+     <div class="image" id="image">
+      <div class="book">
+        <img src="images/book-020.jpg" alt="images/book-020.jpg" draggable="false">
+      </div>
+      <div class="text" id="text">
+        <h3>Adab Ziyarat wa Marifat</h3>
+        <p>Syed Abbas Zaidi</p>
+      </div>
+    </div>
+    
+     
+     <div class="image" id="image">
+      <div class="book">
+        <img src="images/book-021.jpg" alt="images/book-021.jpg" draggable="false">
+      </div>
+      <div class="text" id="text">
+        <h3>Asceticism</h3>
+        <p>Hassan Ramzan Khurasani</p>
+      </div>
+    </div>
+     
+     <div class="image" id="image">
+      <div class="book">
+        <img src="images/book-022.jpg" alt="images/book-022.jpg" draggable="false">
+      </div>
+      <div class="text" id="text">
+        <h3>Al Fasoolul Mahma</h3>
+        <p>Sheikh Ali Bin Muhammad Maliki</p>
+      </div>
+    </div>
+     
+     <div class="image" id="image">
+      <div class="book">
+        <img src="images/book-023.jpg" alt="images/book-023.jpg" draggable="false">
+      </div>
+      <div class="text" id="text">
+        <h3>Sayedna Amir Al Moniminen Ka Khutba Ghadeer</h3>
+        <p>Khusro Qasim</p>
+      </div>
+    </div>
+     
+     <div class="image" id="image">
+      <div class="book">
+        <img src="images/book-024.jpg" alt="images/book-024.jpg" draggable="false">
+      </div>
+      <div class="text" id="text">
+        <h3>Fikr e Islami</h3>
+        <p>Shaheed Murtaza Muthari</p>
+      </div>
+    </div>
+     
+     <div class="image" id="image">
+      <div class="book">
+        <img src="images/book-025.jpg" alt="images/book-025.jpg" draggable="false">
+      </div>
+      <div class="text" id="text">
+        <h3>Mahdism Shia and Sunni Perspectives</h3>
+        <p>Mahdi Akbarnejad</p>
+      </div>
+    </div>
+     
+     <div class="image" id="image">
+      <div class="book">
+        <img src="images/book-026.jpg" alt="images/book-026.jpg" draggable="false">
+      </div>
+      <div class="text" id="text">
+        <h3>Maad Shinasi</h3>
+        <p>Syed Hussain Mohd Tehrani</p>
+      </div>
+    </div>
+    
+      
+     <div class="image" id="image">
+      <div class="book">
+        <img src="images/book-027.jpg" alt="images/book-027.jpg" draggable="false">
+      </div>
+      <div class="text" id="text">
+        <h3>110 Sawal aur Jawab</h3>
+        <p>Nasir Makarim Shirazi</p>
+      </div>
+    </div>
+    
+     
+     <div class="image" id="image">
+      <div class="book">
+        <img src="images/book-028.jpg" alt="images/book-028.jpg" draggable="false">
+      </div>
+      <div class="text" id="text">
+        <h3>Be Zuban Dost</h3>
+        <p>Ayatullah Imam Khamnai</p>
+      </div>
+    </div>
+     
+     <div class="image" id="image">
+      <div class="book">
+        <img src="images/book-029.jpg" alt="images/book-029.jpg" draggable="false">
+      </div>
+      <div class="text" id="text">
+        <h3>Waqa e Karbala</h3>
+        <p>Sheikh Mohd Hadi Yousufi</p>
+      </div>
+    </div>
+    
+     
+     <div class="image" id="image">
+      <div class="book">
+        <img src="images/book-030.jpg" alt="images/book-030.jpg" draggable="false">
+      </div>
+      <div class="text" id="text">
+        <h3>Marifat e Nafs</h3>
+        <p>Hameed Raza Mazahiri</p>
+      </div>
+    </div>
+    
+     
+     <div class="image" id="image">
+      <div class="book">
+        <img src="images/book-031.jpg" alt="images/book-031.jpg" draggable="false">
+      </div>
+      <div class="text" id="text">
+        <h3>Ahlibayt ke Shia</h3>
+        <p>Mohd Mahdi Asifi</p>
+      </div>
+    </div>
+    
+     
+     <div class="image" id="image">
+      <div class="book">
+        <img src="images/book-032.jpg" alt="images/book-032.jpg" draggable="false">
+      </div>
+      <div class="text" id="text">
+        <h3>Maholiyat</h3>
+        <p>Mohd Ibrahim Karimi</p>
+      </div>
+    </div>
+     
+     <div class="image" id="image">
+      <div class="book">
+        <img src="images/book-033.jpg" alt="images/book-033.jpg" draggable="false">
+      </div>
+      <div class="text" id="text">
+        <h3>Fiqh e Masail</h3>
+        <p>Ayatullah Imam Khamnai</p>
+      </div>
+    </div>
+     
+     <div class="image" id="image">
+      <div class="book">
+        <img src="images/book-034.jpg" alt="images/book-034.jpg" draggable="false">
+      </div>
+      <div class="text" id="text">
+        <h3>Muqalat</h3>
+        <p>Syed Akhtar Mahdi Rizwi</p>
+      </div>
+    </div>
+     
+     <div class="image" id="image">
+      <div class="book">
+        <img src="images/book-035.jpg" alt="images/book-035.jpg" draggable="false">
+      </div>
+      <div class="text" id="text">
+        <h3>Takafur e Muslimeen aur Tawheen e Muqadasat</h3>
+        <p>Hajj o Ziyarat Research Centre</p>
+      </div>
+    </div>
+     
+     <div class="image" id="image">
+      <div class="book">
+        <img src="images/book-036.jpg" alt="images/book-036.jpg" draggable="false">
+      </div>
+      <div class="text" id="text">
+        <h3>Chirag e Rahnuma</h3>
+        <p>Sheikh Hussain Tehrani</p>
+      </div>
+    </div>
+     
+     <div class="image" id="image">
+      <div class="book">
+        <img src="images/book-037.jpg" alt="images/book-037.jpg" draggable="false">
+      </div>
+      <div class="text" id="text">
+        <h3>Imam Ali Ibn Abi Talib</h3>
+        <p>Ayatullah Jafar Subhani</p>
+      </div>
+    </div>
+     
+     <div class="image" id="image">
+      <div class="book">
+        <img src="images/book-038.jpg" alt="images/book-038.jpg" draggable="false">
+      </div>
+      <div class="text" id="text">
+        <h3>Imam Hussain Ki Shahadat (Sahaih Hadith)</h3>
+        <p>Khusro Qasim</p>
+      </div>
+    </div>
+    
+     
+     <div class="image" id="image">
+      <div class="book">
+        <img src="images/book-039.jpg" alt="images/book-039.jpg" draggable="false">
+      </div>
+      <div class="text" id="text">
+        <h3>Karbala Ek Salfi Qalam se</h3>
+        <p>Mohd Ismail Salfi Marhoom</p>
+      </div>
+    </div>
+     
+     <div class="image" id="image">
+      <div class="book">
+        <img src="images/book-040.jpg" alt="images/book-040.jpg" draggable="false">
+      </div>
+      <div class="text" id="text">
+        <h3>Amal Mahe Ramzan</h3>
+        <p>Syed Abid Abbas Zaidi</p>
+      </div>
+    </div>
+     
+     <div class="image" id="image">
+      <div class="book">
+        <img src="images/book-041.jpg" alt="images/book-041.jpg" draggable="false">
+      </div>
+      <div class="text" id="text">
+        <h3>Ziyarat Shariyat Ki Nazar Mai</h3>
+        <p>Abbas Ali Zarae</p>
+      </div>
+    </div>
+     
+     <div class="image" id="image">
+      <div class="book">
+        <img src="images/book-042.jpg" alt="images/book-042.jpg" draggable="false">
+      </div>
+      <div class="text" id="text">
+        <h3>Ahkam e Zindagi</h3>
+        <p>Hussain Falah Zadah</p>
+      </div>
+    </div>
+     
+     <div class="image" id="image">
+      <div class="book">
+        <img src="images/book-043.jpg" alt="images/book-043.jpg" draggable="false">
+      </div>
+      <div class="text" id="text">
+        <h3>Rehnumai Haqikat</h3>
+        <p>Jafar Sajani</p>
+      </div>
+    </div>
+     
+     <div class="image" id="image">
+      <div class="book">
+        <img src="images/book-044.jpg" alt="images/book-044.jpg" draggable="false">
+      </div>
+      <div class="text" id="text">
+        <h3>Sahifa Alwiya </h3>
+        <p>Extracts Dua - Imam Ali </p>
+      </div>
+    </div>
+     
+     <div class="image" id="image">
+      <div class="book">
+        <img src="images/book-045.jpg" alt="images/book-045.jpg" draggable="false">
+      </div>
+      <div class="text" id="text">
+        <h3>Asbat ul Haq</h3>
+        <p>Qazi Syed Nurallah Tastari</p>
+      </div>
+    </div>
+     
+     <div class="image" id="image">
+      <div class="book">
+        <img src="images/book-047.jpg" alt="images/book-047.jpg" draggable="false">
+      </div>
+      <div class="text" id="text">
+        <h3>Farog e Ghadeer </h3>
+        <p>Syed Shahid Jamal Rizwi Gopalpuri </p>
+      </div>
+    </div>
+     
+     <div class="image" id="image">
+      <div class="book">
+        <img src="images/book-048.jpg" alt="images/book-048.jpg" draggable="false">
+      </div>
+      <div class="text" id="text">
+        <h3>Namaz, Roza</h3>
+        <p>Ayatullah Imam Kahmnai</p>
+      </div>
+    </div>
+     
+     <div class="image" id="image">
+      <div class="book">
+        <img src="images/book-049.jpg" alt="images/book-049.jpg" draggable="false">
+      </div>
+      <div class="text" id="text">
+        <h3>Hajj ke Masail</h3>
+        <p>Ayatullah Imam Khamnai</p>
+      </div>
+    </div>
+     
+     <div class="image" id="image">
+      <div class="book">
+        <img src="images/book-050.jpg" alt="images/book-050.jpg" draggable="false">
+      </div>
+      <div class="text" id="text">
+        <h3>Qurani Qisse</h3>
+        <p>Saleh Qanari</p>
+      </div>
+    </div>
+     
+     <div class="image" id="image">
+      <div class="book">
+        <img src="images/book-052.jpg" alt="images/book-052.jpg" draggable="false">
+      </div>
+      <div class="text" id="text">
+        <h3>The Uprising of Ashura and Responses to Doubts</h3>
+        <p>Ali Asgar Ridhwani</p>
+      </div>
+    </div>
+    
+     
+     <div class="image" id="image">
+      <div class="book">
+        <img src="images/book-053.jpg" alt="images/book-053.jpg" draggable="false">
+      </div>
+      <div class="text" id="text">
+        <h3>Aurat Islam Mai</h3>
+        <p>Mohd Hussain TabaTabai</p>
+      </div>
+    </div>
+    
+     
+     <div class="image" id="image">
+      <div class="book">
+        <img src="images/book-054.jpg" alt="images/book-054.jpg" draggable="false">
+      </div>
+      <div class="text" id="text">
+        <h3>Hayat aur Karname</h3>
+        <p>Zahid Ali Hindi </p>
+      </div>
+    </div>
+     
+     <div class="image" id="image">
+      <div class="book">
+        <img src="images/book-055.jpg" alt="images/book-055.jpg" draggable="false">
+      </div>
+      <div class="text" id="text">
+        <h3>Islam wa Iran ke Taqabli Khidmat</h3>
+        <p>Shaheed Murtaza Muthari</p>
+      </div>
+    </div>
+     
+     <div class="image" id="image">
+      <div class="book">
+        <img src="images/book-056.jpg" alt="images/book-056.jpg" draggable="false">
+      </div>
+      <div class="text" id="text">
+        <h3>Ek Hon Muslim</h3>
+        <p>Ayatullah Imam Khamnai</p>
+      </div>
+    </div>
+     
+     <div class="image" id="image">
+      <div class="book">
+        <img src="images/book-057.jpg" alt="images/book-057.jpg" draggable="false">
+      </div>
+      <div class="text" id="text">
+        <h3>Namwar Fiqh wa Asool</h3>
+        <p>Syed Shahwar Hussain Naqwi</p>
+      </div>
+    </div>
+     
+     <div class="image" id="image">
+      <div class="book">
+        <img src="images/book-058.jpg" alt="images/book-058.jpg" draggable="false">
+      </div>
+      <div class="text" id="text">
+        <h3>Toshia Mublig</h3>
+        <p>Ali Riza Jafari</p>
+      </div>
+    </div>
+     
+     <div class="image" id="image">
+      <div class="book">
+        <img src="images/book-059.jpg" alt="images/book-059.jpg" draggable="false">
+      </div>
+      <div class="text" id="text">
+        <h3>Shaoor E Wilayt</h3>
+        <p>Syed Ali Akhtar Rizwi</p>
+      </div>
+    </div>
+     
+     <div class="image" id="image">
+      <div class="book">
+        <img src="images/book-060.jpg" alt="images/book-060.jpg" draggable="false">
+      </div>
+      <div class="text" id="text">
+        <h3>Asool E Aqaied</h3>
+        <p>Nasir Makarim Shirazi</p>
+      </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+   
+    
+  </div>
+  
+   <footer>
+      <h6>الْحَمْدُ لِلَّهِ</h6>
+ <p>Total books <b>60</b> <a href="https://idarahwaliulasr.netlify.app/#contact">Contact Us</a> for more information.</p>
+      <span class="foot-text">
+        خادم و  تیار کردہ <a href="https://wa.me/+916005156100">ذیشان</a>
+      </span>
+    </footer>
+  <!-- Project -->
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script> 
+  <script src="books.js"></script>
+</body>
+</html>
