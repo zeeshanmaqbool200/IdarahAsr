@@ -35,7 +35,8 @@ body{
   padding: 10px;
   background: var(--bg-secondary);
   text-align: center;
-  height: 80vh;
+  min-height: 80vh;
+  height: max-content;
 }
 .hero h1{
   font-size: 1.3rem;
@@ -106,7 +107,7 @@ border-radius: 0 10px 10px 0;
  height: -webkit-max-content;
  height: -moz-max-content;
  height: max-content;
- max-height: 600px;
+ max-height: 800px;
  display: -webkit-box;
  display: -ms-flexbox;
  display: flex;
