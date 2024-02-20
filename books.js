@@ -4,6 +4,7 @@ const popularBook = document.getElementById('popular');
 const authorHero = document.getElementById('author');
 const detailsHero = document.getElementById('details-hero');
 const boxes = document.querySelectorAll('.image');
+const cartContainer = document.getElementById('container');
 //Nav Start
 (function($) {
   $(function() {
@@ -37,6 +38,25 @@ const boxes = document.querySelectorAll('.image');
   });
 })(jQuery);
 //Nav End
+boxes.forEach(box=>{
+  box.addEventListener('click', ()=>{
+    let boxImg = box.querySelector("img");
+    let boxHead = box.querySelector("#text h3");
+    let boxText = box.querySelector("#text p");
+    let cartHeader = cartContainer.querySelector('#header');
+    let cartDescription = cartContainer.querySelector('#description');
+    cartHeader.innerText = boxHead.innerText;
+    cartDescription.innerText = boxText.innerText;
+    cartContainer.style.display = "grid";
+    document.body.style.overflow = "hidden";
+    
+  })
+})
+function hideCart() {
+  cartContainer.style.display = "none";
+ document.body.style.overflow = "auto";
+    
+}
 // Hero Random
 window.addEventListener('DOMContentLoaded', randomBookFunc)
 
