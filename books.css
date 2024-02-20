@@ -101,6 +101,9 @@ border-radius: 0 10px 10px 0;
   -webkit-column-gap: 2.5rem;
      -moz-column-gap: 2.5rem;
           column-gap: 2rem;
+    -webkit-row-gap: 0.5rem;
+     -moz-row-gap: 0.5rem;
+          row-gap: 0.5rem;
 }
 .wrapper .image{
  width: 45vw;
