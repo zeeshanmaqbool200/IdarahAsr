@@ -35,7 +35,7 @@ body{
   padding: 10px;
   background: var(--bg-secondary);
   text-align: center;
-  height: 50vh;
+  height: 80vh;
 }
 .hero h1{
   font-size: 1.3rem;
@@ -103,7 +103,6 @@ border-radius: 0 10px 10px 0;
 }
 .wrapper .image{
  width: 45vw;
- max-width: 300px;
  height: -webkit-max-content;
  height: -moz-max-content;
  height: max-content;
@@ -128,11 +127,6 @@ border-radius: 0 10px 10px 0;
          flex: 1 1 auto;
  margin: 10px 0;
  
-}
-@media only screen and (min-width: 900px){
-  
-.wrapper .image{
-}
 }
  .book img{
   width: 30vw;
