@@ -211,10 +211,17 @@ footer a{
   height: 50px;
 }
 .left-side {
-    background-image: url("");
     background-size: cover;
     background-position: center;
   border-radius: 10px 0px 0px 10px;
+  display: flex;
+  justify-content: center;
+  object-position: bottom
+}
+.left-side img{
+  width: 300px;
+  height: 250px;
+  object-fit: cover;
 }
 
 .right-side {
