@@ -3,8 +3,8 @@ const searchTextOutput = document.getElementById('search-text-output');
 const popularBook = document.getElementById('popular');
 const authorHero = document.getElementById('author');
 const detailsHero = document.getElementById('details-hero');
-const boxes = document.querySelectorAll('.image');
 const cartContainer = document.getElementById('container');
+const boxes = document.querySelectorAll('.image');
 //Nav Start
 (function($) {
   $(function() {
@@ -38,6 +38,7 @@ const cartContainer = document.getElementById('container');
   });
 })(jQuery);
 //Nav End
+//Boxes Click
 boxes.forEach(box=>{
   box.addEventListener('click', ()=>{
     let boxImg = box.querySelector("img");
@@ -53,18 +54,19 @@ boxes.forEach(box=>{
     document.body.style.overflow = "hidden";
     
   })
-})
+});
 function hideCart() {
   cartContainer.style.display = "none";
  document.body.style.overflow = "auto";
     
 }
+
 // Hero Random
 window.addEventListener('DOMContentLoaded', randomBookFunc)
 
 function randomBookFunc() {
   let randomBook = Math.floor(Math.random() * boxes.length);
-  console.log(boxes[randomBook])
+  
   popularBook.innerHTML = boxes[randomBook].outerHTML;
 
 }
