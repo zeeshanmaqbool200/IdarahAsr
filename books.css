@@ -1,23 +1,15 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
 *{
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 :root{
-  --text-primary: #100E0A;
-  --bg-main: #FBFBF9;
-  --bg-primary: #AE9565;
-  --bg-secondary: #D5C8AA;
-  --bg-accent: #C6B080;
-  --text-accent: #7C6B46;
+  --text-primary: #FFBD39;
+  --bg-main: #29292A;
+  --bg-primary: #C1C1C1;
+  --bg-secondary: #000000;
+  --bg-accent: #242424;
+  --text-accent: #FF5353;
 }
 html, body{
   font-size: 100%;
@@ -32,11 +24,11 @@ body{
 }
 .hero{
   margin: 0 0 10px 0;
-  padding: 10px;
+  padding: 20px;
   background: var(--bg-secondary);
-  text-align: center;
-  min-height: 80vh;
-  height: max-content;
+  display: grid;
+  place-items:center;
+  min-height: 500px;
 }
 .hero h1{
   font-size: 1.3rem;
@@ -48,20 +40,21 @@ body{
   text-align: center;
   margin: 10px 0;
 }
+.popular img{
+  width: 45vw !important;
+}
 .searchDiv{
-  height: -webkit-min-content;
-  height: -moz-min-content;
+  min-height: 200px;
   height: min-content;
   padding: 100px 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 1rem;
 }
 .searchDiv #search-text-output{
   width: 100%;
+  color: var(--text-primary);
 }
 .searchDiv button,input{
   border: none;
@@ -70,101 +63,86 @@ body{
   padding: 10px;
   background: transparent;
   border-radius: 5px;
+  color: var(--bg-primary);
+}
+.searchDiv input{
+  width: 50vw;
 }
 .searchDiv button{
   background: var(--bg-secondary);
+  color: var(--text-primary);
+  transition: 3s ;
 }
-
+.searchDiv button:hover{
+  background: transparent;
+  border-radius: 20px;
+}
 
 .heading{
 background: var(--bg-secondary);
 color: var(--text-primary);
 padding: 20px 10px;
+margin: 20px 0;
 width: 50%;
 border-radius: 0 10px 10px 0;
+
 }
 
 
 
 .wrapper{
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  display: grid;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
   width: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-column-gap: 2.5rem;
-     -moz-column-gap: 2.5rem;
-          column-gap: 2rem;
-    -webkit-row-gap: 0.5rem;
-     -moz-row-gap: 0.5rem;
-          row-gap: 0.5rem;
+  column-gap: 10px;
 }
 .wrapper .image{
- width: 45vw;
- height: -webkit-max-content;
- height: -moz-max-content;
+ width: 120px;
+ max-width: 300px;
  height: max-content;
- max-height: 800px;
- display: -webkit-box;
- display: -ms-flexbox;
+ max-height: 600px;
  display: flex;
- -webkit-box-pack: center;
-     -ms-flex-pack: center;
-         justify-content: center;
- -webkit-box-orient: vertical;
- -webkit-box-direction: normal;
-     -ms-flex-direction: column;
-         flex-direction: column;
- -webkit-box-align: center;
-     -ms-flex-align: center;
-         align-items: center;
+ justify-content: center;
+ flex-direction: column;
+ align-items: center;
  background: var(--bg-accent);
  padding: 10px 20px;
- -webkit-box-flex: 1;
-     -ms-flex: 1 1 auto;
-         flex: 1 1 auto;
+ flex: 1 1 auto;
  margin: 10px 0;
  
 }
+@media only screen and (min-width: 900px){
+  
+.wrapper .image{
+  width: 400px;
+}
+}
  .book img{
-  width: 30vw;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -webkit-box-shadow: 0 0 5px #000000E3;
-          box-shadow: 0 0 5px #000000E3;
+  width: 100%;
+  object-fit: cover;
+  box-shadow: 0 0 5px #000000E3;
   border-radius: 10px 0 0 0;
 }
  .text h3{
   text-align: center;
-  font-size: .8rem;
+  font-size: .7rem;
+  
 }
 .text p{
-  font-size: .6rem
+  font-size: .3rem;
+  color: var(--bg-primary);
 }
 /* Footer */
 footer{
   padding: 20px 20px 5px 20px;
   background: var(--bg-secondary);
   border-radius: 20px 20px 0 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
    text-align: center;
    font-family: "Cairo" , sans-serif;
 }
@@ -181,6 +159,7 @@ footer .foot-text{
 footer a{
   color: var(--text-primary);
 }
+
 /*
 * Prefixed by httpsBrowsers:
 */
@@ -194,53 +173,47 @@ footer a{
     margin: auto;
     display: -ms-grid;
     display: none;
-    -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    width: 600px;
-    height: 450px;
-    background-color: white;
+    width: 80vw;
+    height: 50vh;
+    background-color: var(--bg-accent);
     border-radius: 10px;
 }
 .back-button{
-  padding: 10px;
-  background: #FFC773;
+  padding: 15px;
+  background: var(--bg-main);
   width: 70px;
   height: 50px;
 }
 .left-side {
-    background-size: cover;
-    background-position: center;
   border-radius: 10px 0px 0px 10px;
   display: flex;
   justify-content: center;
-  object-position: bottom
 }
 .left-side img{
   width: 300px;
   height: 250px;
   object-fit: cover;
 }
-
 .right-side {
-    margin: 20px 32px 32px 32px;
+    margin: 20px 32px 10px 32px;
 }
 
 #perfume {
     font-size: 12px;
     letter-spacing: 5px;
-    color: hsl(228, 12%, 48%);
+    color: var(--text-primary);
 }
 
 #header {
     font-family: 'Fraunces', serif;
     line-height: 1;
-    color: hsl(212, 21%, 14%);
+    color: var(--text-accent);
     margin-bottom: 25px;
 }
 
 #description {
     font-size: 14px;
-    color: hsl(228, 12%, 48%);
+    color: var(--bg-primary);
     line-height: 1.5;
     margin-bottom: 5px;
 }
@@ -252,14 +225,14 @@ footer a{
 }
 
 #number-discount {
-    color: hsl(158, 36%, 37%);
+    color: var(--text-primary);
     font-family: 'Fraunces', serif;
     margin-right: 10px;
 }
 
 #number-full {
     font-size: 14px;
-    color: hsl(228, 12%, 48%);
+    color: #6C7289;
     text-decoration: line-through;
 }
 
@@ -287,14 +260,17 @@ footer a{
     transition: background-color 0.2s;
     margin-top: 6px
 }
-
+.cart-btn a{
+  text-decoration: none;
+  color: var(--bg-secondary);
+}
 .cart-btn:hover {
     background-color: hsl(156, 42%, 18%);
     cursor: pointer;
 }
 
 .cart-btn > svg {
-    margin-left: -8px;
+    margin-left: -9px;
 }
 
 @media only screen and (max-width: 767px) {
